@@ -91,6 +91,18 @@ public class Linked_List {
         size--;
         return val;
     }
+    public void Reverse(){
+        node prev = null;
+        node next;
+        node curr=tail=head;
+        while(curr!=null) {
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+    }
     public static void main(String[] args) {
         Linked_List LL_1=new Linked_List();
         LL_1.addFirst(30);
@@ -100,7 +112,6 @@ public class Linked_List {
         LL_1.addLast(60);
         LL_1.addLast(70);
         LL_1.AddMiddle(2,40);
-        LL_1.RemoveFirst();
         node ptr=head;
         while(ptr!=null) {
             System.out.print(ptr.data+"->....");
@@ -108,7 +119,13 @@ public class Linked_List {
         }
         System.out.print("null");
         System.out.println();
-        System.out.println(size);
+        LL_1.Reverse();
+        node temp=head;
+        while(temp!=null) {
+            System.out.print(temp.data+"->....");
+            temp=temp.next;
+        }
+
     }
 }
 
