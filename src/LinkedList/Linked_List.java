@@ -121,17 +121,9 @@ public class Linked_List {
         node slow=head;
         node fast=head;
         node mid=null;
-        if(size%2==0) {
-            while (fast != null) {
-                slow = slow.next;
-                fast = fast.next.next;
-            }
-        }
-        if(size%2!=0) {
-            while (fast.next!=null) {
-                slow = slow.next;
-                fast = fast.next.next;
-            }
+        while(fast!=null&& fast.next!=null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
         return slow;
     }
