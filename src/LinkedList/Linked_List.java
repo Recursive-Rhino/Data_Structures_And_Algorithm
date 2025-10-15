@@ -103,6 +103,38 @@ public class Linked_List {
         }
         head=prev;
     }
+    public void RemoveFromEnd(int n) {
+        node ptr=head;
+        int counter=1;
+        node prev=null;
+        while(ptr!=null) {
+            if(counter==(size-n+1)) {
+                prev.next=ptr.next;
+            }
+            prev=ptr;
+            ptr=ptr.next;
+            counter++;
+        }
+
+    }
+    public node FindMid(){
+        node slow=head;
+        node fast=head;
+        node mid=null;
+        if(size%2==0) {
+            while (fast != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+        }
+        if(size%2!=0) {
+            while (fast.next!=null) {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+        }
+        return slow;
+    }
     public static void main(String[] args) {
         Linked_List LL_1=new Linked_List();
         LL_1.addFirst(30);
@@ -118,14 +150,9 @@ public class Linked_List {
             ptr=ptr.next;
         }
         System.out.print("null");
+        node mid=LL_1.FindMid();
         System.out.println();
-        LL_1.Reverse();
-        node temp=head;
-        while(temp!=null) {
-            System.out.print(temp.data+"->....");
-            temp=temp.next;
-        }
-
+        System.out.println(mid.data);
     }
 }
 
