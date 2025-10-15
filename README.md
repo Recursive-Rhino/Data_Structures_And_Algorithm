@@ -6,7 +6,6 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![DSA](https://img.shields.io/badge/DSA-Problem%20Solving-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/Recursive-Rhino/Data_Structures_And_Algorithm?style=for-the-badge&color=orange)
 
 </div>
@@ -24,9 +23,6 @@ Welcome to my **Data Structures and Algorithms** repository! This is a collectio
 - 🏆 Prepare for technical interviews
 - 📈 Track progress and improvement over time
 - 🤝 Share knowledge with the developer community
-
----
-
 
 ## 📋 Topics Covered
 
@@ -52,29 +48,6 @@ Welcome to my **Data Structures and Algorithms** repository! This is a collectio
 
 </details>
 
----
-
-## 📊 Progress Tracker
-
-```
-Total Problems: 300+
-├── Easy:     106 ████████████░░░░░░░░ 35%
-├── Medium:   122 █████████████░░░░░░░ 41%
-└── Hard:      72 ████████░░░░░░░░░░░░ 24%
-
-Current Streak: 🔥 45 Days
-Longest Streak: 🏆 78 Days
-```
-
-### 📈 Monthly Statistics
-
-| Month | Problems Solved | Topics Covered |
-|-------|----------------|----------------|
-| October 2024 | 28 | Arrays, Strings, Trees |
-| September 2024 | 35 | DP, Graphs, Backtracking |
-| August 2024 | 31 | All Topics |
-
----
 ## 📝 Problem Index
 
 | S.No | Problem Name | Difficulty | Topic | Solution | Time | Space |
@@ -96,7 +69,6 @@ Longest Streak: 🏆 78 Days
 > 📌 **Note:** Complete problem list can be found in individual topic folders.
 
 ---
-
 
 ## 🛠️ How to Use
 
@@ -133,6 +105,27 @@ java TwoSum
 2. Navigate to the desired problem file
 3. Run the file directly from the IDE
 
+### Code Structure
+
+Each solution file follows this structure:
+
+```java
+/**
+ 1. Brute
+ 2. Better
+ 3. Optimal
+ */
+
+public class Solution {
+    // Solution code here
+    
+    public static void main(String[] args) {
+        // Test cases
+    }
+}
+```
+
+---
 
 ## 📚 Resources
 
@@ -195,14 +188,11 @@ Contributions are welcome! If you'd like to contribute:
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_PROFILE)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/YOUR_HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]((https://www.linkedin.com/in/smruti-ranjan-nayak-/))
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Smruti_Ranjan29?t=DQLnJJG_gcKGdRmmejvVgA&s=09)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:smruti1234qwerty@gmail.com)
 
 </div>
-
----
-
 <div align="center">
 
 ### 💭 *"The only way to learn a new programming language is by writing programs in it."* - Dennis Ritchie
@@ -213,6 +203,6 @@ Contributions are welcome! If you'd like to contribute:
 
 ---
 
-**© 2024 Smruti Ranjan Nayak. All Rights Reserved.**
+**© 2024 Smruti RAnjan Nayak. All Rights Reserved.**
 
 </div>
