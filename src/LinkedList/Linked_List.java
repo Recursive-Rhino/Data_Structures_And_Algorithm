@@ -88,9 +88,9 @@ public class Linked_List {
         int val = ptr.data;
         tail = prev;
         prev.next = null;
-        size--;
-        return val;
+        size--;return val;
     }
+
     public void Reverse(){
         node prev = null;
         node next;
@@ -127,24 +127,66 @@ public class Linked_List {
         }
         return slow;
     }
-    public static void main(String[] args) {
-        Linked_List LL_1=new Linked_List();
-        LL_1.addFirst(30);
-        LL_1.addFirst(20);
-        LL_1.addFirst(10);
-        LL_1.addLast(50);
-        LL_1.addLast(60);
-        LL_1.addLast(70);
-        LL_1.AddMiddle(2,40);
+    public void Show(){
         node ptr=head;
         while(ptr!=null) {
             System.out.print(ptr.data+"->....");
             ptr=ptr.next;
         }
         System.out.print("null");
+    }
+    public void ReverseFromANode(node temp) {
+        node prev = null;
+        node next;
+        node curr=tail=temp;
+        while(curr!=null) {
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        temp=prev;
+
+    }
+    public Boolean PalindromeChecker(node temp) {
+        node right=head;
+        node left=temp;
+        boolean count=false;
+        while(right!=null || left!=null) {
+            if(right.data!= left.data) {
+                return true;
+            }
+            right=right.next;
+            left=left.next;
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        Linked_List LL_1=new Linked_List();
+//        LL_1.addFirst(30);
+//        LL_1.addFirst(20);
+//        LL_1.addFirst(10);
+//        LL_1.addLast(50);
+//        LL_1.addLast(60);
+//        LL_1.addLast(70);
+//        LL_1.AddMiddle(2,40);
+        LL_1.addFirst(10);
+        LL_1.addLast(20);
+        LL_1.addLast(30);
+        LL_1.addLast(30);
+        LL_1.addLast(10);
         node mid=LL_1.FindMid();
         System.out.println();
-        System.out.println(mid.data);
+        System.out.println("Mid is "+mid.data);
+        LL_1.Show();
+        LL_1.ReverseFromANode(mid);
+        System.out.println();
+        if(LL_1.PalindromeChecker(mid)) {
+            System.out.println("not a Palindrome");
+        } else {
+            System.out.println("It is a Palindrome");
+        }
+
     }
 }
 
