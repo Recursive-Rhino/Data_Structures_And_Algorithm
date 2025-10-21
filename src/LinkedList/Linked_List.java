@@ -135,6 +135,7 @@ public class Linked_List {
         }
         System.out.print("null");
     }
+    //sdfvb
     public void ReverseFromANode(node temp) {
         node prev = null;
         node next;
@@ -161,6 +162,40 @@ public class Linked_List {
         }
         return false;
     }
+    public void createLoopAtPosition(int position) {
+        if(head == null) return;
+
+        node temp = head;
+        node loopNode = null;
+        int count = 0;
+
+        // Find the node at the given position
+        while(temp.next != null) {
+            if(count == position) {
+                loopNode = temp;  // This is where loop will connect
+            }
+            temp = temp.next;
+            count++;
+        }
+
+        // Connect last node to the loop position
+        if(loopNode != null) {
+            temp.next = loopNode;
+            System.out.println("Loop created at position: " + position);
+        }
+    }
+    public boolean DetectingCycle() {
+        node slow=head;
+        node fast=head;
+        while(fast!=null&&fast.next!=null) {
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast) {
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args) {
         Linked_List LL_1=new Linked_List();
 //        LL_1.addFirst(30);
@@ -176,9 +211,9 @@ public class Linked_List {
         LL_1.addLast(30);
         LL_1.addLast(10);
         node mid=LL_1.FindMid();
+        LL_1.Show();
         System.out.println();
         System.out.println("Mid is "+mid.data);
-        LL_1.Show();
         LL_1.ReverseFromANode(mid);
         System.out.println();
         if(LL_1.PalindromeChecker(mid)) {
@@ -186,6 +221,13 @@ public class Linked_List {
         } else {
             System.out.println("It is a Palindrome");
         }
+        LL_1.createLoopAtPosition(2);
+        if(LL_1.DetectingCycle()) {
+            System.out.println("loop Detected");
+        } else {
+            System.out.println("Loop Not detected");
+        }
+
 
     }
 }
