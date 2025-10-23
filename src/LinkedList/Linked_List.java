@@ -196,6 +196,29 @@ public class Linked_List {
         }
         return false;
     }
+    public void RemoveCycle(){
+        node slow=head;
+        node fast=head;
+        node prev=null;
+        boolean check=false;
+        while(fast!=null&&fast.next!=null) {
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast) {
+                check= true;
+                break;
+            }
+        }
+        if(check) {
+            slow=head;
+            while(slow!=fast) {
+                prev=fast;
+                slow=slow.next;
+                fast=fast.next;
+            }
+        }
+        prev.next=null;
+    }
     public static void main(String[] args) {
         Linked_List LL_1=new Linked_List();
 //        LL_1.addFirst(30);
@@ -208,27 +231,28 @@ public class Linked_List {
         LL_1.addFirst(10);
         LL_1.addLast(20);
         LL_1.addLast(30);
-        LL_1.addLast(30);
-        LL_1.addLast(10);
+        LL_1.addLast(40);
+        LL_1.addLast(50);
         node mid=LL_1.FindMid();
         LL_1.Show();
         System.out.println();
-        System.out.println("Mid is "+mid.data);
-        LL_1.ReverseFromANode(mid);
-        System.out.println();
-        if(LL_1.PalindromeChecker(mid)) {
-            System.out.println("not a Palindrome");
-        } else {
-            System.out.println("It is a Palindrome");
-        }
+//        System.out.println("Mid is "+mid.data);
+//        LL_1.ReverseFromANode(mid);
+//        System.out.println();
+//        if(LL_1.PalindromeChecker(mid)) {
+//            System.out.println("not a Palindrome");
+//        } else {
+//            System.out.println("It is a Palindrome");
+//        }
         LL_1.createLoopAtPosition(2);
         if(LL_1.DetectingCycle()) {
             System.out.println("loop Detected");
+            LL_1.RemoveCycle();
+            System.out.println("Cycle Removed");
         } else {
             System.out.println("Loop Not detected");
         }
-
-
+        LL_1.Show();
     }
 }
 
