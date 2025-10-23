@@ -50,21 +50,22 @@ Welcome to my **Data Structures and Algorithms** repository! This is a collectio
 
 ## 📝 Problem Index
 
-| S.No | Problem Name | Difficulty | Topic | Solution | Time | Space |
-|------|-------------|-----------|-------|----------|------|-------|
-| 001 | Array Utility | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/ArrayUtility/) | O(n) | O(1) |
-| 002 | Buy And Sell Stock | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/BuyAndSell_Stock/) | O(n) | O(1) |
-| 003 | Finding Leaders | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/FindingLeaders/) | O(n) | O(n) |
-| 004 | Greater Then nBy2 | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/GreaterThen_nBy2/) | O(n) | O(n) |
-| 005 | Longest Consecutive Sequence | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays | [View](./Array/Longest_Consevucative_Sequence/) | O(n) | O(n) |
-| 006 | Longest Subarray | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays | [View](./Array/Longest_Subarray/) | O(n) | O(n) |
-| 007 | Longest Sub Array | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays | [View](./Array/LongestSubArray/) | O(n) | O(1) |
-| 008 | Maximum Sub Array | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays | [View](./Array/MaximumSubArray/) | O(n) | O(1) |
-| 009 | Missing Value Problem | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/Missing_Value_Problem/) | O(n) | O(1) |
-| 010 | Rearrange The Neg And Pos | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/RearrangeTheNegAndPos/) | O(n) | O(n) |
-| 011 | Sorting | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/Sorting/) | O(n log n) | O(1) |
-| 012 | Sorting 0s 1s 2s | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/Sorting_0s_1s_2s/) | O(n) | O(1) |
-| 013 | Two Sum | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays | [View](./Array/TwoSum/) | O(n) | O(n) |
+| S.No | Problem Name                 | Difficulty | Topic      | Solution                                        | Time | Space |
+|------|------------------------------|-----------|------------|-------------------------------------------------|------|-------|
+| 001 | Array Utility                | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/ArrayUtility/)                   | O(n) | O(1) |
+| 002 | Buy And Sell Stock           | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/BuyAndSell_Stock/)               | O(n) | O(1) |
+| 003 | Finding Leaders              | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/FindingLeaders/)                 | O(n) | O(n) |
+| 004 | Greater Then nBy2            | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/GreaterThen_nBy2/)               | O(n) | O(n) |
+| 005 | Longest Consecutive Sequence | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays     | [View](./Array/Longest_Consevucative_Sequence/) | O(n) | O(n) |
+| 006 | Longest Subarray             | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays     | [View](./Array/Longest_Subarray/)               | O(n) | O(n) |
+| 007 | Longest Sub Array            | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays     | [View](./Array/LongestSubArray/)                | O(n) | O(1) |
+| 008 | Maximum Sub Array            | ![Medium](https://img.shields.io/badge/Medium-ffaa00?style=flat-square) | Arrays     | [View](./Array/MaximumSubArray/)                | O(n) | O(1) |
+| 009 | Missing Value Problem        | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/Missing_Value_Problem/)          | O(n) | O(1) |
+| 010 | Rearrange The Neg And Pos    | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/RearrangeTheNegAndPos/)          | O(n) | O(n) |
+| 011 | Sorting                      | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/Sorting/)                        | O(n log n) | O(1) |
+| 012 | Sorting 0s 1s 2s             | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/Sorting_0s_1s_2s/)               | O(n) | O(1) |
+| 013 | Two Sum                      | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | Arrays     | [View](./Array/TwoSum/)                         | O(n) | O(n) |
+| 013 | LinkedList                   | ![Easy](https://img.shields.io/badge/Easy-00b300?style=flat-square) | LinkedList | [View](./Array/TwoSums/)                        | O(n) | O(n) |
 
 > 📌 **Note:** Complete problem list can be found in individual topic folders.
 
