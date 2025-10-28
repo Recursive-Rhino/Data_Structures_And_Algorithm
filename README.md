@@ -81,7 +81,7 @@ Welcome to my **Data Structures and Algorithms** repository! This is a collectio
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DATA-STRUCTURES-AND-ALGORITHMS.git
+git clone https://github.com/Recursive-Rhino/Data_Structures_And_Algorithm.git
 cd DATA-STRUCTURES-AND-ALGORITHMS
 ```
 
