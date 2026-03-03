@@ -1,16 +1,13 @@
-package Bit_Manipulation.SetTheIthBit;
+package Bit_Manipulation.Basic_Learning.RemoveTheBit.setAndUnsetBits;
 
 import java.util.Scanner;
 
-public class ToggleIthBit {
+public class LastUnsetBit {
     static void main() {
         System.out.println("Enter the number : ");
         Scanner input=new Scanner(System.in);
         int num=input.nextInt();
-        System.out.println("Enter the bitPos : ");
-        int i=input.nextInt();
-        int ans=num ^(1<<i);
+        int ans=(num|(num+1));
         System.out.println(ans);
-
     }
 }

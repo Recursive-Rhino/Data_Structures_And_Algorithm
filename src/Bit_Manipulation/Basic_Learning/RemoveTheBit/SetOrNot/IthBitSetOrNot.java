@@ -1,4 +1,4 @@
-package Bit_Manipulation.SetOrNot;
+package Bit_Manipulation.Basic_Learning.RemoveTheBit.SetOrNot;
 
 import java.util.Scanner;
 

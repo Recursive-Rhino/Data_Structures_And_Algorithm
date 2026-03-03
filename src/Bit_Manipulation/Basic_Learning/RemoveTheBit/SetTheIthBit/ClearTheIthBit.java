@@ -1,4 +1,4 @@
-package Bit_Manipulation.SetTheIthBit;
+package Bit_Manipulation.Basic_Learning.RemoveTheBit.SetTheIthBit;
 
 import java.util.Scanner;
 
