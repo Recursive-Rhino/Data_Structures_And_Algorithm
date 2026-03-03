@@ -8,9 +8,10 @@ public class Bubble_sort {
         int[] arr=new int[10];
         int i,j,temp;
         for (i = 0; i < 10; i++) {
-            System.out.print("Enter the number "+(i+1)+" :");
+            System.out.print(STR."Enter the number \{i + 1} :");
             arr[i]=input.nextInt();
         }
+        int java$=10;
         for(i=0;i<10;i++) {
             for(j=0;j<10-i-1;j++) {
                 if(arr[j]>arr[j+1]){
@@ -20,6 +21,7 @@ public class Bubble_sort {
                 }
             }
         }
+        int num=arr.length;
         System.out.println("Sorted Array is : ");
         for (i=0;i<10;i++) {
             System.out.print(arr[i]+" ");

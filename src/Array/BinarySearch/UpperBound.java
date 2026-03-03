@@ -29,13 +29,13 @@ public class UpperBound {
         int SmallestIndex=arr.length;
         while(low<=high) {
             mid=(low+high)/2;
-            if(arr[mid]>=search) {
+            if(arr[mid]>search) {
                 SmallestIndex=mid;
                 high=mid-1;
             } else {
                 low=mid+1;
             }
         }
-        System.out.println("SMallest Index is : "+SmallestIndex);
+        System.out.println("Upper Bound is"+SmallestIndex);
     }
 }
